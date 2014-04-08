@@ -1,0 +1,63 @@
+// ejerciciowhile2.cpp : Defines the entry point for the console application.
+// Gary Hamel
+// Fecha:8/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{
+   float P1,P2,P3,practica,final,NF;
+   do
+   {
+	   cout<< "introduzca P1:";
+     cin>> P1;
+   }
+   while ((P1>100)||(P1<0)&&(P1!=-99));
+   
+   while (P1!=-99)
+   {
+     do
+   {
+	   cout<<"introduzca P2:";
+	   cin>> P2;
+   }
+	while ((P2>100)||(P2<0));
+   
+    do
+	{
+		cout<<"introduzca el P3:";
+		cin>> P3;
+	}
+	while((P3>100)||(P3<0));
+
+	do
+	{
+		cout<<"introduzca la practica:";
+		cin>> practica;
+	}
+	while ((practica>100)||(practica<0));
+
+	do 
+	{
+		cout<< "introduzca final:";
+		cin>> final;
+	}
+	while((final>100)||(final<0));
+	
+	NF=(P1+P2+P3)/3*0.4+practica*0.2+final*0.2;
+	cout<<"Nota Final: "<<NF;
+
+	do
+	{
+		cout<<"introduzca el P1:";
+		cin>>P1;
+	}
+	while((P1>100)||(P1<0)&&(P1!=-99));
+   }
+   getch();
+}
