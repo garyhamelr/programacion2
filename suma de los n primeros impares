@@ -1,0 +1,29 @@
+// N numeros impares.cpp : Defines the entry point for the console application.
+//Autor:Gary Hamel 
+//Fecha:15-04-14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+
+{
+	int suma,i,n,cont;
+	cout<< "ingrese n:" ;
+	cin>> n;
+	suma=0;
+    cont=1;
+	i=1;
+	while(i<=n)
+	{
+		suma=suma+cont;
+		cont=cont+2;
+		i=i+1;
+	}
+	cout<<"mostrar suma:";
+	cout<< suma;
+	getch();
+}
