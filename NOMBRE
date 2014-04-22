@@ -1,0 +1,24 @@
+// nombre.cpp : Defines the entry point for the console application.
+//Autor:Gary Hamel
+//Fecha:24/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+void main ()
+{
+  char caracter='+';
+ int I;
+ for (I=0;I<=32;I++)
+     cout<<caracter;
+ cout<<"\n";
+ cout<<"*\t Me llamo Gary      *";
+ cout<<"\n";
+ for (I=0;I<=32;I++)
+	 cout<<caracter;
+ cout<<"\n";
+ getch();
+}
