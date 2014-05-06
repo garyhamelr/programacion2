@@ -1,0 +1,33 @@
+// Ej. del examen.cpp : Defines the entry point for the console application.
+//Autor:Gary Hamel 
+//FECHA:6/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+
+{
+	
+	float x,N,suma,sig,i,factorial;
+	cout<< " ingrese x: ";
+	cin>>x;
+	cout<< " ingrese n: ";
+	cin>>N;
+	factorial=1;
+	sig=1;
+	suma=5;
+	for(i=1;i<=N;i++)
+	{
+		factorial=factorial*(i+1);
+		suma=suma-sig*(pow(x,i))/factorial;
+		sig=-1*sig;
+        
+	}
+	cout<<"la suma es: "<<suma;
+	getch();
+	getch();
+}
