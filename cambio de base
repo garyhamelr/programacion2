@@ -1,0 +1,30 @@
+// cambio de base.cpp : Defines the entry point for the console application.
+// Autor:Gary Hamel
+// Fecha:6/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+
+{
+int N,r,d,s;
+float i;
+cout<<"ingrese el numero: ";
+cin>>N;
+s=0;
+i=0;
+while(N>0)
+{
+	d=N%10;
+	N=N/10;
+	s=s+d*pow(r,i);
+	i=i+1;
+}
+cout<<"el valor del numero en base decimal es: ";
+cout<<s;
+getch();
+}
